@@ -163,8 +163,11 @@ main{
 #header-paragraph{
   margin-bottom: 1.3rem;
   font-weight: 700;
+  font-size: 20px;
   color: var(--dark-grayish-blue);
-text-align: justify;}
+text-align: justify;
+
+}
 
 #header-button{
   color: var(--off-white);
