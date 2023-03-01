@@ -97,12 +97,12 @@ section{
   margin-top: 8rem;
 }
 
-.nav-list{
+#nav-list{
   list-style-type: none;
   margin-bottom: 1.8rem;
 }
 
-.nav-link{
+#nav-link{
   text-decoration: none;
   color: var(--very-dark-blue);
   font-size: 1.2rem;
@@ -386,7 +386,7 @@ border-radius: 10px;
     gap: 3rem;
   }
 
-  .nav-list{
+  #nav-list{
     margin: 0;
   }
 
