@@ -55,10 +55,6 @@ section{
   margin-bottom: 1.3rem;
 }
 
-.logo {
-  height: 40px;
-    
-}
 
 #nav-button{
   cursor: pointer;
@@ -254,13 +250,13 @@ border-radius: 10px;
 
 
 
-.latest-section{
+#latest-section{
   background-color: var(--very-dark-blue);
   padding: 1.5rem 1rem;
   margin-bottom: 2.6rem;
 }
 
-.latest-section hr{
+#latest-section hr{
   border-color: var(--dark-grayish-blue);
   margin-bottom: 1.3rem;
 
@@ -429,7 +425,7 @@ border-radius: 10px;
     line-height: 2rem;
   }
 
-  .latest-section{
+  #latest-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
