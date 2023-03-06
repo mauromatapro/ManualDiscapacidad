@@ -328,6 +328,13 @@ text-align: justify;
   padding: 90px 0 150px 0;
 }
 
+footer img {
+  width: 40%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10%;
+}
+
 @keyframes slide{
   from{
     transform: translateX(100%);
