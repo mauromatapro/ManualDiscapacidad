@@ -23,8 +23,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
-}
+ }
 
 p{
   font-size: 15px;
@@ -36,7 +35,7 @@ a{
   color: var(--very-dark-blue);
 }
 
-/* navigation */
+/* Navegación */
 
 header{
   position: sticky;
@@ -60,12 +59,14 @@ section{
   cursor: pointer;
   transform: rotateZ(0deg);
   transition: 200ms;
+  
 }
 
 #close-bar{
   cursor: pointer;
   transform: rotateZ(0deg);
   transition: 200ms;
+  
 }
 
 #navigation{
@@ -75,6 +76,7 @@ section{
   top: 0;
   left: 0;
   transition: 200ms;
+  
 }
 
 #bar-container{
@@ -87,6 +89,7 @@ section{
   animation-duration: 200ms;
   transform: translateX(100%); 
   transition: 200ms ease-out;
+  
 }
 
 #close-bar{
@@ -95,20 +98,22 @@ section{
 
 #nav-menu{
   margin-top: 8rem;
+  
 }
 
-#nav-list{
+.nav-list{
   list-style-type: none;
   margin-bottom: 1.8rem;
+
 }
 
-#nav-link{
+.nav-link{
   text-decoration: none;
   color: var(--very-dark-blue);
   font-size: 1.2rem;
 }
 
-/* main section */
+/* Sección General con botones */
 
 
 main{
@@ -180,89 +185,17 @@ text-align: justify;
   text-decoration: none;
 }
 
-/* latest section */
-.division { 
-box-sizing: content-box; /* 1 */
-  height: 20px; /* 1 */
-  width: 80%;
- margin: auto;
-  overflow: visible; /* 2 */
-background-color: rgba(65, 60, 60, 0.349);
-border-radius: 10px;
-}
 
-.acordeon {
-   width: 100%;
-  margin: 50px auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
-}
-.acordeon .container {
-  position: relative;
-  margin: 10px 10px;
-}
- 
-.acordeon .label {
-  position: relative;
-  padding: 10px 0;
-  font-size: 20px;
-  color: black;
-  cursor: pointer;
-}
-
-.acordeon hr {
-  width: 100;
-  margin-left: 0;
-  border: 1px solid rgb(37, 37, 37);
- }
-
-.acordeon .label::before {
-  content: '+';
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  font-size: 30px;
-  transform: translateY(-50%);
- }
-
-.acordeon .content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 20px;
-  text-align: justify;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  width: 780px;
-  overflow: hidden;
-  transition: 0s;
- 
-}
- 
- 
-
-.acordeon .container.activa .content {
-  height: 100%;
-  width: 100%;
-  
-}
-
-.acordeon .container.activa .label::before {
-  content: '-';
-  font-size: 50px;
-}
+/* Sección de artículos */ 
 
 
-
-#latest-section{
+.latest-section{
   background-color: var(--very-dark-blue);
   padding: 1.5rem 1rem;
   margin-bottom: 2.6rem;
 }
 
-#latest-section hr{
+.latest-section hr{
   border-color: var(--dark-grayish-blue);
   margin-bottom: 1.3rem;
 
@@ -334,12 +267,61 @@ border-radius: 10px;
   text-decoration: none;
 }
  
+.nav-link:hover,
+.nav-link:active,
+.latest-article-title:hover,
+.latest-article-title:active{
+  color: var(--soft--orange);
+  transition: 200ms ease-in-out;
+}
 
 #header-button:hover,
 #header-button:active{
   background-color: var(--very-dark-blue);
   transition: 200ms ease-in-out;
 }
+
+
+/* Acordeon con material de lectura donde se abren y se cierran por temáticas*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 20px;
+
+}
+
+.content {
+  font-size: 18px;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;padding: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.seccion {
+  margin: 20px 0;
+}
+
+
 
 @keyframes slide{
   from{
@@ -370,6 +352,7 @@ border-radius: 10px;
     position: relative;
     background-color: transparent;
     height: 100%;
+    
   }
 
   #bar-container{
@@ -377,6 +360,7 @@ border-radius: 10px;
     width: auto;
     padding: 0;
     background-color: transparent;
+     
   }
   
   #nav-menu{
@@ -384,11 +368,14 @@ border-radius: 10px;
     margin: 0;
     align-items: center;
     gap: 3rem;
+
   }
 
-  #nav-list{
+  .nav-list{
     margin: 0;
   }
+
+  
 
   /* Main Content */
   body{

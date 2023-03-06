@@ -3,7 +3,9 @@ const navigation = document.getElementById("navigation");
 const barContainer = document.getElementById("bar-container");
 const closeButton = document.getElementById("close-bar");
 const navItems = document.getElementById("nav-menu").children;
-const header = document.getElementsByTagName("header")
+const header = document.getElementsByTagName("header");
+ 
+ 
 
 Array.from(navItems).forEach((item) => item.addEventListener("click", close))
 navButton.addEventListener("click", open)
@@ -36,11 +38,25 @@ function close() {
       navigation.style.display = "";
     }, 200)
   }
-}
-const acordeon = document.getElementsByClassName('container');
+} 
 
-for (i=0; i<acordeon.length; i++) {
-  acordeon[i].addEventListener('click', function () {
-    this.classList.toggle('activa')
-  })
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
+ 
