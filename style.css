@@ -294,7 +294,6 @@ text-align: justify;
   outline: none;
   transition: 0.4s;
   font-size: 20px;
-
 }
 
 .content {
@@ -321,7 +320,13 @@ text-align: justify;
   margin: 20px 0;
 }
 
+#DEFINICION, #CLASIFICACION {
+  padding-top: 90px;
+}
 
+#PSICOFARMACOLOGIA {
+  padding: 90px 0 150px 0;
+}
 
 @keyframes slide{
   from{
