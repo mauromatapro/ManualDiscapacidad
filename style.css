@@ -329,10 +329,10 @@ text-align: justify;
 }
 
 footer img {
-  width: 20rem;
+  width: 20em;
   margin: auto;
   display: block;
-  margin-bottom: 5rem;
+  margin-bottom: 1em;
 }
 
 @keyframes slide{
