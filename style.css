@@ -285,7 +285,7 @@ text-align: justify;
 /* Acordeon con material de lectura donde se abren y se cierran por temáticas*/
 .accordion {
   background-color: #eee;
-  color: #444;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -319,6 +319,7 @@ text-align: justify;
 .seccion {
   margin: 20px 0;
 }
+ 
 
 #DEFINICION, #CLASIFICACION {
   padding-top: 90px;
